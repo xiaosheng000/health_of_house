@@ -26,7 +26,7 @@
 </script>
 </head>
 <body leftMargin=0 topMargin=0 marginwidth="0" marginheight="0"
-	 style="background-image: url(${pageContext.request.contextPath }/images/rightbg.jpg); background-repeat:no-repeat; background-attachment: fixed;
+	 style="background-image: url(${pageContext.request.contextPath }xiaosheng/images/rightbg.jpg); background-repeat:no-repeat; background-attachment: fixed;
 	 	background-size: 100%;width: 100%; height: 100%;">
 	<div ALIGN="center">
 		<table border="0" width="1140px" cellspacing="0" cellpadding="0"
