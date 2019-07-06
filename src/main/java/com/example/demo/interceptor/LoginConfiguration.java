@@ -19,7 +19,7 @@ public class LoginConfiguration implements WebMvcConfigurer{
 				//拦截所有路径
 				.addPathPatterns("/**") //
 				//除了哪些路径
-				.excludePathPatterns("/xiaosheng/login","/xiaosheng/tologin","/xiaosheng","/","/favicon.ico", //
+				.excludePathPatterns("/xiaosheng/login","/xiaosheng/tologin","/xiaosheng","/","/xiaosheng/favicon.ico", //
 									"/xiaosheng/css/**","/xiaosheng/js/**","/xiaosheng/images/**","/xiaosheng/fonts/**");
 		
 	}

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication
 @Controller
+@RequestMapping("/xiaosheng")
 public class HealthOfHouseBootApplication extends SpringBootServletInitializer{
 
 	//进入登录页面
