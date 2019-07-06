@@ -318,7 +318,7 @@
 								<tr>
 									<td>${row.id }</td>		
 									<td>${row.content }</td>						
-									<td><img src="${pageContext.request.contextPath }/images/${row.image }" class="img"></td>											
+									<td><img src="${pageContext.request.contextPath }/xiaosheng/images/${row.image }" class="img"></td>											
 									<td>${row.username }</td>	
 									<td>${row.hospital }</td>											
 								</tr>
