@@ -18,17 +18,17 @@
 <title>客户管理-BootCRM</title>
 <!-- 引入css样式文件 -->
 <!-- Bootstrap Core CSS -->
-<link href="${pageContext.request.contextPath }/css/bootstrap.min.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath }/xiaosheng/css/bootstrap.min.css" rel="stylesheet" />
 <!-- MetisMenu CSS -->
-<link href="${pageContext.request.contextPath }/css/metisMenu.min.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath }/xiaosheng/css/metisMenu.min.css" rel="stylesheet" />
 <!-- DataTables CSS -->
-<link href="${pageContext.request.contextPath }/css/dataTables.bootstrap.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath }/xiaosheng/css/dataTables.bootstrap.css" rel="stylesheet" />
 <!-- Custom CSS -->
-<link href="${pageContext.request.contextPath }/css/sb-admin-2.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath }/xiaosheng/css/sb-admin-2.css" rel="stylesheet" />
 <!-- Custom Fonts -->
-<link href="${pageContext.request.contextPath }/css/font-awesome.min.css" rel="stylesheet"
+<link href="${pageContext.request.contextPath }/xiaosheng/css/font-awesome.min.css" rel="stylesheet"
 	type="text/css" />
-<link href="${pageContext.request.contextPath }/css/boot-crm.css" rel="stylesheet"
+<link href="${pageContext.request.contextPath }/xiaosheng/css/boot-crm.css" rel="stylesheet"
 	type="text/css" />
 <style type="text/css">
 table .img {
