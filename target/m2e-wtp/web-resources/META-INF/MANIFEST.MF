@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Built-By: pc
+Build-Jdk: 11.0.2
+Implementation-Title: health_of_house_boot
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.example
+Created-By: Maven Integration for Eclipse
+
