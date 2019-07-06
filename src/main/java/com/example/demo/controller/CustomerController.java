@@ -55,7 +55,7 @@ public class CustomerController {
 	@RequestMapping("/outlogin")
 	public String outlogin(HttpSession session) {
 		session.invalidate();
-		return "redirect:/";
+		return "redirect:/WEB-INF/views/login.jsp";
 	}
 	
 //	//跳转添加用户
