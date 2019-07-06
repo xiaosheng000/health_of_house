@@ -5,11 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="${pageContext.request.contextPath}/css/style.css"
+<link href="${pageContext.request.contextPath}/xiaosheng/css/style.css"
 	type=text/css rel=stylesheet>
-<link href="${pageContext.request.contextPath}/css/boot-crm.css"
+<link href="${pageContext.request.contextPath}/xiaosheng/css/boot-crm.css"
 	type=text/css rel=stylesheet>
-<script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js">
+<script src="${pageContext.request.contextPath}/xiaosheng/js/jquery-1.11.3.min.js">
 	
 </script>
 
