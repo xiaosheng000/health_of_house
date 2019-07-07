@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication
 @Controller
-public class HealthOfHouseBootApplication extends SpringBootServletInitializer{
+public class HealthOfHouseBootApplication {
 
 	//进入登录页面
 	@RequestMapping("/")
@@ -21,11 +21,5 @@ public class HealthOfHouseBootApplication extends SpringBootServletInitializer{
 		SpringApplication.run(HealthOfHouseBootApplication.class, args);
 	}
 	
-	
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		// TODO Auto-generated method stub
-		return builder.sources(HealthOfHouseBootApplication.class);
-	}
 	
 }
