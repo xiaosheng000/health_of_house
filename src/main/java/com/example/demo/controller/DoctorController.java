@@ -60,7 +60,7 @@ public class DoctorController {
 				
 				String originalFilename = file.getOriginalFilename();	
 //				String dirPath = "F:\\learn_itheima\\2019 spring boot\\health_of_house_boot\\src\\main\\resources\\static\\images\\";
-				String dirPath = "D:\\WOYAOXUEXI\\java1-8-work\\health_of_house_boot\\src\\main\\resources\\static\\images\\";			
+				String dirPath = "/home/zxw/health_of_house/src/main/resources/static/images/";			
 				String newName = UUID.randomUUID() + originalFilename;
 				doctor.setImage(newName);
 				try {
