@@ -64,6 +64,7 @@ public class DrugsController {
 				String dirPath = "/home/zxw/health_of_house/src/main/resources/static/images/";			
 				String newName = UUID.randomUUID() + originalFilename;
 				drugs.setImage(newName);
+				System.out.println(newName);
 				try {
 					System.out.println(dirPath + newName);
 					file.transferTo(new File(dirPath + newName));
