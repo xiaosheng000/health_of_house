@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HealthOfHouseBootApplication{
 
 	//进入登录页面
-	@RequestMapping("/")
+	@RequestMapping("/xiaosheng")
 	public String index() {
 		return "/index.jsp";
 	}
