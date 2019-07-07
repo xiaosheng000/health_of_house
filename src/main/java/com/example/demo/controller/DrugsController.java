@@ -61,7 +61,7 @@ public class DrugsController {
 				
 				String originalFilename = file.getOriginalFilename();	
 //				String dirPath = "F:\\learn_itheima\\2019 spring boot\\health_of_house_boot\\src\\main\\resources\\static\\images\\";
-				String dirPath = "F:\\learn_itheima\\2019 java_base\\health_of_house_boot\\src\\main\\resources\\static\\images\\";			
+				String dirPath = "D:\\WOYAOXUEXI\\java1-8-work\\health_of_house_boot\\src\\main\\resources\\static\\images\\";			
 				String newName = UUID.randomUUID() + originalFilename;
 				drugs.setImage(newName);
 				try {
@@ -111,6 +111,6 @@ public class DrugsController {
 	@RequestMapping("/drugs/Update")
 	public String update(Drugs drugs) {
 		drugsService.updateDrugs(drugs);
-		return "redirect:/xiaosheng/drugs/main.action";
+		return "redirect:/drugs/main.action";
 	}
 }

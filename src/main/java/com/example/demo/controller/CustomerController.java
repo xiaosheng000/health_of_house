@@ -24,9 +24,9 @@ public class CustomerController {
 	public String login(@RequestParam("username") String username, //
 						@RequestParam("password") String password, //
 						Model model , HttpSession session ) {
-		if(username.equals("小圣") && password.equals("123")) {
+		if(username.equals("admin") && password.equals("123")) {
 			Customer customer = new Customer();
-			customer.setUsername("小圣");
+			customer.setUsername("admin");
 			session.setAttribute("USER_SESSION", customer);
 			return "redirect:/customer/main.action";
 		}

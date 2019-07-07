@@ -28,6 +28,7 @@ public class NavigationTag extends TagSupport {
 		JspWriter writer = pageContext.getOut();
 		HttpServletRequest request = 
 				(HttpServletRequest) pageContext.getRequest();
+		@SuppressWarnings("rawtypes")
 		Page page = (Page) request.getAttribute(bean);
 		if (page == null)
 			return SKIP_BODY;
@@ -117,6 +118,7 @@ writer.print("<li class=\"disabled\"><a href=\"#\">" + "尾页</a></li>");
 	 */
 	private String resolveUrl(String url, 
         javax.servlet.jsp.PageContext pageContext) throws JspException {
+		@SuppressWarnings("rawtypes")
 		Map params = pageContext.getRequest().getParameterMap();
 		for (Object key : params.keySet()) {
 			if ("page".equals(key) || "rows".equals(key)){
