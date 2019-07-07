@@ -5,11 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="${pageContext.request.contextPath}/xiaosheng/css/style.css"
+<link href="${pageContext.request.contextPath}/css/style.css"
 	type=text/css rel=stylesheet>
-<link href="${pageContext.request.contextPath}/xiaosheng/css/boot-crm.css"
+<link href="${pageContext.request.contextPath}/css/boot-crm.css"
 	type=text/css rel=stylesheet>
-<script src="${pageContext.request.contextPath}/xiaosheng/js/jquery-1.11.3.min.js">
+<script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js">
 	
 </script>
 
@@ -26,7 +26,7 @@
 </script>
 </head>
 <body leftMargin=0 topMargin=0 marginwidth="0" marginheight="0"
-	 style="background-image: url(${pageContext.request.contextPath }/xiaosheng/images/rightbg.jpg); background-repeat:no-repeat; background-attachment: fixed;
+	 style="background-image: url(${pageContext.request.contextPath }/images/rightbg.jpg); background-repeat:no-repeat; background-attachment: fixed;
 	 	background-size: 100%;width: 100%; height: 100%;">
 	<div ALIGN="center">
 		<table border="0" width="1140px" cellspacing="0" cellpadding="0"
@@ -48,7 +48,7 @@
 						<font color="red"> <%-- 提示信息--%> <span id="message">${msg}</span>
 						</font>
 						<%-- 提交后的位置：/WEB-INF/jsp/customer.jsp--%>
-						<form action="${pageContext.request.contextPath }/xiaosheng/tologin"
+						<form action="${pageContext.request.contextPath }/tologin"
 							method="POST" onsubmit="return check()">
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
 							<br /> 账&nbsp;号：<input type="text" name="username" id="username"><br>

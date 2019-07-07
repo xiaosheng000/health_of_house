@@ -17,7 +17,6 @@ import com.example.demo.service.DrugsService;
 import com.example.demo.utils.Page;
 
 @Controller
-@RequestMapping("/xiaosheng")
 public class DrugsController {
 	
 	@Autowired
@@ -84,7 +83,7 @@ public class DrugsController {
 		drugs.setDescribes(describes);
 		drugs.setTerm(term);
 		drugsService.createDrugs(drugs);
-		return "redirect:/xiaosheng/drugs/main.action";
+		return "redirect:/drugs/main.action";
 	}
 	
 	//删除用户

@@ -10,7 +10,6 @@ import com.example.demo.service.EmrService;
 import com.example.demo.utils.Page;
 
 @Controller
-@RequestMapping("/xiaosheng")
 public class EmrController {
 	
 	@Autowired

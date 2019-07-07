@@ -14,7 +14,6 @@ import com.example.demo.service.CustomerService;
 import com.example.demo.utils.Page;
 
 @Controller
-@RequestMapping("/xiaosheng")
 public class CustomerController {
 	
 	@Autowired
@@ -55,7 +54,7 @@ public class CustomerController {
 	@RequestMapping("/outlogin")
 	public String outlogin(HttpSession session) {
 		session.invalidate();
-		return "redirect:/WEB-INF/views/login.jsp";
+		return "redirect:/";
 	}
 	
 //	//跳转添加用户

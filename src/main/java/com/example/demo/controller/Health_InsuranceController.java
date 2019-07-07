@@ -10,7 +10,6 @@ import com.example.demo.service.Health_InsuranceService;
 import com.example.demo.utils.Page;
 
 @Controller
-@RequestMapping("/xiaosheng")
 public class Health_InsuranceController {
 		
 	@Autowired

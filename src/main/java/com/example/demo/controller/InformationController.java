@@ -10,7 +10,6 @@ import com.example.demo.service.InformationService;
 import com.example.demo.utils.Page;
 
 @Controller
-@RequestMapping("/xiaosheng")
 public class InformationController {
 	
 	@Autowired

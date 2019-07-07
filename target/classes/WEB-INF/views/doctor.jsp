@@ -18,16 +18,16 @@
 	<title>客户管理-BootCRM</title>
 	<!-- 引入css样式文件 -->
 	<!-- Bootstrap Core CSS -->
-	<link href="${pageContext.request.contextPath }/xiaosheng/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="${pageContext.request.contextPath }/css/bootstrap.min.css" rel="stylesheet" />
 	<!-- MetisMenu CSS -->
-	<link href="${pageContext.request.contextPath }/xiaosheng/css/metisMenu.min.css" rel="stylesheet" />
+	<link href="${pageContext.request.contextPath }/css/metisMenu.min.css" rel="stylesheet" />
 	<!-- DataTables CSS -->
-	<link href="${pageContext.request.contextPath }/xiaosheng/css/dataTables.bootstrap.css" rel="stylesheet" />
+	<link href="${pageContext.request.contextPath }/css/dataTables.bootstrap.css" rel="stylesheet" />
 	<!-- Custom CSS -->
-	<link href="${pageContext.request.contextPath }/xiaosheng/css/sb-admin-2.css" rel="stylesheet" />
+	<link href="${pageContext.request.contextPath }/css/sb-admin-2.css" rel="stylesheet" />
 	<!-- Custom Fonts -->
-	<link href="${pageContext.request.contextPath }/xiaosheng/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-	<link href="${pageContext.request.contextPath }/xiaosheng/css/boot-crm.css" rel="stylesheet" type="text/css" />
+	<link href="${pageContext.request.contextPath }/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="${pageContext.request.contextPath }/css/boot-crm.css" rel="stylesheet" type="text/css" />
 	<style type="text/css">
 	table .img{
 		width:70px;
@@ -50,7 +50,7 @@
   <nav class="navbar navbar-default navbar-static-top" role="navigation"
 		 style="margin-bottom: 0">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="${pageContext.request.contextPath }/xiaosheng/customer/main.action">BOOT客户管理系统 v2.0</a>
+		<a class="navbar-brand" href="${pageContext.request.contextPath }/customer/main.action">BOOT客户管理系统 v2.0</a>
 	</div>
 	<!-- 导航栏右侧图标部分 -->
 	<ul class="nav navbar-top-links navbar-right">
@@ -199,7 +199,7 @@
 				<li><a href="#"><i class="fa fa-gear fa-fw"></i> 系统设置</a></li>
 				<li class="divider"></li>
 				<li>
-					<a href="${pageContext.request.contextPath }/xiaosheng/outlogin">
+					<a href="${pageContext.request.contextPath }/outlogin">
 					<i class="fa fa-sign-out fa-fw"></i>退出登录
 					</a>
 				</li>
@@ -222,62 +222,62 @@
 					</div> 
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/customer/main.action">
+				    <a href="${pageContext.request.contextPath }/customer/main.action">
 				      <i class="fa fa-edit fa-fw"></i> 客户管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/drugs/main.action">
+				    <a href="${pageContext.request.contextPath }/drugs/main.action">
 				      <i class="fa fa-dashboard fa-fw" ></i> 药品管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/doctor/main.action" class="active">
+				    <a href="${pageContext.request.contextPath }/doctor/main.action" class="active">
 				      <i class="fa fa-edit fa-fw"></i> 医生管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/management/main.action">
+				    <a href="${pageContext.request.contextPath }/management/main.action">
 				      <i class="fa fa-dashboard fa-fw" ></i> 健康管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/disease/main.action" >
+				    <a href="${pageContext.request.contextPath }/disease/main.action" >
 				      <i class="fa fa-edit fa-fw"></i> 疾病症状管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/physicians/main.action" >
+				    <a href="${pageContext.request.contextPath }/physicians/main.action" >
 				      <i class="fa fa-dashboard fa-fw" ></i> 医师讲解管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/diseasecounseling/main.action" >
+				    <a href="${pageContext.request.contextPath }/diseasecounseling/main.action" >
 				      <i class="fa fa-edit fa-fw"></i> 疾病咨询管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/appointment/main.action" >
+				    <a href="${pageContext.request.contextPath }/appointment/main.action" >
 				      <i class="fa fa-dashboard fa-fw" ></i> 预约挂号管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/emr/main.action">
+				    <a href="${pageContext.request.contextPath }/emr/main.action">
 				      <i class="fa fa-edit fa-fw"></i> 电子病历管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/doctorvisits/main.action"  >
+				    <a href="${pageContext.request.contextPath }/doctorvisits/main.action"  >
 				      <i class="fa fa-dashboard fa-fw" ></i> 医生问诊管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/health_Insurance/main.action" >
+				    <a href="${pageContext.request.contextPath }/health_Insurance/main.action" >
 				      <i class="fa fa-edit fa-fw"></i> 客户医保管理
 				    </a>
 				</li>
 				<li>
-				    <a href="${pageContext.request.contextPath }/xiaosheng/information/main.action"  >
+				    <a href="${pageContext.request.contextPath }/information/main.action"  >
 				      <i class="fa fa-dashboard fa-fw" ></i> 通知信息管理
 				    </a>
 				</li>
@@ -299,7 +299,7 @@
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<form class="form-inline" method="get" 
-				      action="${pageContext.request.contextPath }/xiaosheng/doctor/main.action">
+				      action="${pageContext.request.contextPath }/doctor/main.action">
 					<div class="form-group">
 						<label for="customerName">医生名称</label> 
 						<input type="text" class="form-control" id="customerName" 
@@ -311,7 +311,7 @@
 			</div>
 		</div>
 		
-		<a href="${pageContext.request.contextPath }/xiaosheng/doctor/toAdd" class="btn btn-primary" data-toggle="modal" 
+		<a href="${pageContext.request.contextPath }/doctor/toAdd" class="btn btn-primary" data-toggle="modal" 
 		           >新建</a>
 		<div class="row">
 			<div class="col-lg-12">
@@ -336,14 +336,14 @@
 								
 								<tr>
 									<td>${row.id }</td>
-									<td><img src="${pageContext.request.contextPath }/xiaosheng/images/${row.image }" class="img"></td>
+									<td><img src="${pageContext.request.contextPath }/images/${row.image }" class="img"></td>
 									<td>${row.username }</td>
 									<td>${row.section }</td>
 									<td>${row.describes }</td>
 									<td>${row.recommendation }</td>
 									<td>${row.years }</td>
 									<td>
-										<a href="${pageContext.request.contextPath }/xiaosheng/doctor/byId?id=${row.id}" class="btn btn-primary btn-xs" data-toggle="modal">修改</a>
+										<a href="${pageContext.request.contextPath }/doctor/byId?id=${row.id}" class="btn btn-primary btn-xs" data-toggle="modal">修改</a>
 										<a href="#" class="btn btn-danger btn-xs" onclick="deleteAll(${row.id})">删除</a>
 									</td>								
 								</tr>
@@ -352,7 +352,7 @@
 						</tbody>
 					</table>
 					<div class="col-md-12 text-right">
-						<itheima:page url="${pageContext.request.contextPath }/xiaosheng/doctor/main.action" />
+						<itheima:page url="${pageContext.request.contextPath }/doctor/main.action" />
 					</div>
 					<!-- /.panel-body -->
 				</div>
@@ -364,20 +364,20 @@
 	<!-- 客户列表查询部分  end-->
 	<!-- 引入js文件 -->
 	<!-- jQuery -->
-	<script src="${pageContext.request.contextPath }/xiaosheng/js/jquery-1.11.3.min.js"></script>
+	<script src="${pageContext.request.contextPath }/js/jquery-1.11.3.min.js"></script>
 	<!-- Bootstrap Core JavaScript -->
-	<script src="${pageContext.request.contextPath }/xiaosheng/js/bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath }/js/bootstrap.min.js"></script>
 	<!-- Metis Menu Plugin JavaScript -->
-	<script src="${pageContext.request.contextPath }/xiaosheng/js/metisMenu.min.js"></script>
+	<script src="${pageContext.request.contextPath }/js/metisMenu.min.js"></script>
 	<!-- DataTables JavaScript -->
-	<script src="${pageContext.request.contextPath }/xiaosheng/js/jquery.dataTables.min.js"></script>
-	<script src="${pageContext.request.contextPath }/xiaosheng/js/dataTables.bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath }/js/jquery.dataTables.min.js"></script>
+	<script src="${pageContext.request.contextPath }/js/dataTables.bootstrap.min.js"></script>
 	<!-- Custom Theme JavaScript -->
-	<script src="${pageContext.request.contextPath }/xiaosheng/js/sb-admin-2.js"></script>
+	<script src="${pageContext.request.contextPath }/js/sb-admin-2.js"></script>
 	<script type="text/javascript">
 	function deleteAll(id) {
 	    if(confirm('确实要删除该客户吗?')) {
-	$.post("${pageContext.request.contextPath }/xiaosheng/doctor/deleteId",{"id":id},
+	$.post("${pageContext.request.contextPath }/doctor/deleteId",{"id":id},
 	function(data){
 	            if(data =="OK"){
 	                alert("客户删除成功！");

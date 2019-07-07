@@ -11,7 +11,6 @@ import com.example.demo.service.DiseaseService;
 import com.example.demo.utils.Page;
 
 @Controller
-@RequestMapping("/xiaosheng")
 public class DiseaseController {
 	
 	@Autowired

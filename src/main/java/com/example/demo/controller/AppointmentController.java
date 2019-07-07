@@ -11,7 +11,6 @@ import com.example.demo.service.AppointmentService;
 import com.example.demo.utils.Page;
 
 @Controller
-@RequestMapping("/xiaosheng")
 public class AppointmentController {
 
 	@Autowired

@@ -17,7 +17,6 @@ import com.example.demo.service.DoctorService;
 import com.example.demo.utils.Page;
 
 @Controller
-@RequestMapping("/xiaosheng")
 public class DoctorController {
 	
 	@Autowired
@@ -81,7 +80,7 @@ public class DoctorController {
 		doctor.setRecommendation(recommendation);
 		doctor.setYears(years);
 		doctorService.createDoctor(doctor);
-		return "redirect:/xiaosheng/doctor/main.action";
+		return "redirect:/doctor/main.action";
 	}
 	
 	//删除用户
@@ -109,6 +108,6 @@ public class DoctorController {
 	@RequestMapping("/doctor/Update")
 	public String update(Doctor doctor) {
 		doctorService.updateDoctor(doctor);
-		return "redirect:/xiaosheng/doctor/main.action";
+		return "redirect:/doctor/main.action";
 	}
 }
