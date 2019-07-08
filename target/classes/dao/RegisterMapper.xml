@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+              "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.RegisterMapper">
+	<insert id="registerUser" parameterType="Admin">
+		insert into admin(username,password,names,email,qq,sex)
+ 			values(#{username},#{password},#{names},#{email},#{qq},#{sex})
+	</insert>
+	
+	<select id="findAllByCode" parameterType="String" resultType="Admin">
+		select username from admin where username = #{username} 
+	</select>
+</mapper>

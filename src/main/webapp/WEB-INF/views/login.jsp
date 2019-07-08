@@ -52,12 +52,12 @@
 							method="POST" onsubmit="return check()">
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
 							<br /> 账&nbsp;号：<input type="text" name="username" id="username"><br>
-							<br> 密&nbsp;码：<input type="password" name="password"
-								id="password"> <br>
+							<br> 密&nbsp;码：<input type="password" name="password"id="password"> <br>
 							<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<center>
 								<input type="submit" value="登录" >
 							</center>
+							<a href="${pageContext.request.contextPath }/toRegister">注册</a>
 						</form>
 					</fieldset>
 				</td>

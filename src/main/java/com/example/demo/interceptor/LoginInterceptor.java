@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.demo.domain.Admin;
 import com.example.demo.domain.Customer;
 
 @Component
@@ -20,8 +21,8 @@ public class LoginInterceptor implements HandlerInterceptor {
 		
 		//获取session存储的对象
 		HttpSession session = request.getSession();
-		Customer customer = (Customer) session.getAttribute("USER_SESSION");
-		if(customer != null) {
+		Admin admin = (Admin) session.getAttribute("USER_SESSION");
+		if(admin != null) {
 			return true;
 		}
 		System.out.println("拦截器");

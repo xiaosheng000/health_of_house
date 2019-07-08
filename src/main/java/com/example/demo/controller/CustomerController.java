@@ -6,10 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.example.demo.domain.Admin;
 import com.example.demo.domain.Customer;
+import com.example.demo.service.AdminService;
 import com.example.demo.service.CustomerService;
 import com.example.demo.utils.Page;
 
@@ -19,15 +22,18 @@ public class CustomerController {
 	@Autowired
 	private CustomerService customerService;
 	
+	@Autowired
+	private AdminService adminService;
+	
 	//判断登录
-	@RequestMapping("tologin")
+	@RequestMapping(value="tologin", method = RequestMethod.POST)
 	public String login(@RequestParam("username") String username, //
 						@RequestParam("password") String password, //
 						Model model , HttpSession session ) {
-		if(username.equals("admin") && password.equals("123")) {
-			Customer customer = new Customer();
-			customer.setUsername("admin");
-			session.setAttribute("USER_SESSION", customer);
+		Admin admin = adminService.findUser(username, password);
+		if(admin != null) {
+			
+			session.setAttribute("USER_SESSION", admin);
 			return "redirect:/customer/main.action";
 		}
 		model.addAttribute("msg", "账号或者密码错误");
@@ -50,6 +56,12 @@ public class CustomerController {
 		return "/WEB-INF/views/main.jsp";
 	}
 	
+	// 注册跳转
+	@RequestMapping(value = "/toRegister")
+	public String toRegister() {
+		return "/WEB-INF/views/register.jsp";
+	}
+	
 	//退出登录
 	@RequestMapping("/outlogin")
 	public String outlogin(HttpSession session) {
@@ -63,6 +75,11 @@ public class CustomerController {
 //		
 //		return "/WEB-INF/customer/add.jsp";
 //	}
+	// 跳到登录页面，请求为GET
+	@RequestMapping(value = "login.action", method = RequestMethod.GET)
+	public String toLogin() {
+		return "/WEB-INF/views/login.jsp";
+	}
 	
 	//新增用户后重定向跳转到主页
 	@RequestMapping("/customer/add")
