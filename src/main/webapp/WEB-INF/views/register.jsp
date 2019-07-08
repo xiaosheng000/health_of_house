@@ -36,7 +36,7 @@
 							<i class="fa fa-user"></i>
 						</div>
 						<div class="form-group help">
-							<input type="email" class="form-control" id="inputPassword3" placeholder="邮件" required="required">
+							<input type="email" class="form-control" id="inputPassword3" placeholder="邮件" name="email" required="required">
 							<i class="fa fa-envelope"></i>
 						</div>
 						<div class="form-group help">
